@@ -1,0 +1,46 @@
+### Register
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "name": "vinoth",
+  "email": "vinoth@example.com",
+  "password": "123456"
+}
+
+### Login
+POST https://personal-finance-manager-api.onrender.com/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "vinoth@example.com",
+  "password": "123456"
+}
+
+### Get Goals
+GET http://localhost:5000/api/goals
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5M2JlMWY5ZmJiNTZmMmM0MjI1YWVlZiIsImlhdCI6MTc2NTUzMjE3MSwiZXhwIjoxNzY2MTM2OTcxfQ.P8FRAs8hL2K-_5cQ_GZuisAKFntjS0ItwJ0gU8Pu5hY
+
+### Add Goal
+POST http://localhost:5000/api/goals
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5M2JlMWY5ZmJiNTZmMmM0MjI1YWVlZiIsImlhdCI6MTc2NTUzMjE3MSwiZXhwIjoxNzY2MTM2OTcxfQ.P8FRAs8hL2K-_5cQ_GZuisAKFntjS0ItwJ0gU8Pu5hY
+
+{
+  "title": "Buy car",
+  "targetAmount": 50000
+}
+
+### Get Expenses
+GET http://localhost:5000/api/expenses
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5M2JlMWY5ZmJiNTZmMmM0MjI1YWVlZiIsImlhdCI6MTc2NTUzMjE3MSwiZXhwIjoxNzY2MTM2OTcxfQ.P8FRAs8hL2K-_5cQ_GZuisAKFntjS0ItwJ0gU8Pu5hY
+
+### Add Expense
+POST http://localhost:5000/api/expenses
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5M2JlMWY5ZmJiNTZmMmM0MjI1YWVlZiIsImlhdCI6MTc2NTUzMjE3MSwiZXhwIjoxNzY2MTM2OTcxfQ.P8FRAs8hL2K-_5cQ_GZuisAKFntjS0ItwJ0gU8Pu5hY
+
+{
+  "title": "wash",
+  "amount": 220
+}
