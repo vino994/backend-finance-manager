@@ -20,7 +20,7 @@ const app = express();
 
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://expense-manager-personal.netlify.app",
+  "https://personal-expenses-app-chi.vercel.app",
 ];
 
 app.use(
